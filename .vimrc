@@ -1,4 +1,4 @@
-" Last Change: 2013/03/15 18:30:42.
+" Last Change: 2013/03/15 19:04:01.
 set nocompatible                " be iMproed
 filetype off                    " required!
 filetype plugin indent off      " required!
@@ -156,7 +156,7 @@ let g:ctrlp_match_window_reversed = 0
 autocmd FileType help nnoremap <buffer> q <C-w>c
 
 " Load NERDTree when launch macvim
-if has('gui_macvim')
+if has('gui_running')
    autocmd VimEnter * NERDTree
 endif
 " This move the cursor into the main window
